@@ -12,6 +12,21 @@ export default new Router({
       component: Home
     },
     {
+      path:'/category',
+      name:'category',
+      component: () => import('./views/Category.vue')
+    },
+    {
+      path:'/cart',
+      name:'cart',
+      component: () => import('./views/Cart.vue')
+    },
+    {
+      path:'/user',
+      name:'user',
+      component: () => import('./views/User.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
