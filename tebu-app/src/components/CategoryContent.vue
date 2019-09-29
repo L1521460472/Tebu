@@ -164,6 +164,8 @@ export default {
 .list_right ul li span{
     text-align: center;
     line-height: 0.54rem;
+    font-size: 0.26rem;
     color: #969696;
+
 }
 </style>

@@ -65,11 +65,7 @@ export default {
         }
     },
     mounted(){
-        // axios.get('/product/list').then((result)=>{
-        //     result.data
-        // }).catch((err)=>{
-        //     console.error(err);
-        // })
+
     },
     methods:{
         gotogoods(){
@@ -108,7 +104,7 @@ export default {
     border: 1px solid #cdcdcb;
     border-radius: 4px;
     padding-left: 0.06rem;
-        margin-left: 0.15rem;
+    margin-left: 0.15rem;
     background: #f7f7f7 url(../assets/option01.png) no-repeat right;
 }
 #list_option option{
@@ -141,6 +137,8 @@ export default {
     border: none;
     padding-left: 0.68rem;
     margin-left: 0.15rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
 }
 .button{
     width: 0.8rem;
@@ -184,6 +182,7 @@ export default {
     margin:0.1rem 0;
     border-radius: 0.1rem;
     padding: 0.2rem 0.15rem;
+
 }
 .banner ul li img{
     display: block;
@@ -195,13 +194,14 @@ export default {
     width: 3.65rem;
     height: 3.28rem;
     float: right;
+    margin-right: 0.2rem;
 }
 .list_right .name{
     font-size: 0.28rem;
     color: #4e4735;
     width: 3.65rem;
-    padding-left: 0.1rem;
-    padding-right: 0.2rem;
+    /* padding-left: 0.1rem;
+    padding-right: 0.2rem; */
     height: 0.76rem;
     line-height: 0.38rem;
     margin-top: 0.08rem;

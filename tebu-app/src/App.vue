@@ -1,7 +1,7 @@
 <template>
   <div id="app" style="font-size:0.24rem">
 
-    <footer>
+    <footer ref="ft">
     <div v-for="page of pages" @click="gotoPage(page)" :class="{current:page === currentPage}" :key="page.name"><span style="font-size:0.3rem" v-bind:class="page.icon"></span>{{page.text}} </div>
     </footer>
     <router-view/>
@@ -17,7 +17,7 @@ export default {
       pages:[
         {name:'home',text:'首页',path:'/',icon:'iconfont icon-zhiyuanshouye9'},
         {name:'category',text:'分类',path:'/category',icon:'iconfont icon-fenlei'},
-        {name:'cart',text:'购物车',path:'/cart',icon:'iconfont icon-cart_icon'},
+        {name:'shopcart',text:'购物车',path:'/cart',icon:'iconfont icon-cart_icon'},
         {name:'user',text:'我的',path:'/user',icon:'iconfont icon-profile'},
       ]
     }
@@ -29,6 +29,15 @@ export default {
         this.$router.push({name:page.name})
       }
     }
+  },
+  mounted(){
+    this.$eventBus.$on('showHide',(flag)=>{
+      if(flag){
+        this.$refs.ft.style.bottom = '0rem';
+      }else{
+        this.$refs.ft.style.bottom = '-1.16rem';
+      }
+    })
   }
 }
 </script>

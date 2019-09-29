@@ -107,7 +107,7 @@ h1{
 }
 .header .iconfont{
     position: absolute;
-    top: 0.2rem;
+    top: 0.27rem;
     left: 2.6rem;
     z-index: 9;
 }
@@ -127,6 +127,7 @@ h1{
     font-size: 0.3rem;
     padding-left: 1.1rem;
     color: black;
+    box-sizing: border-box;
 }
 
 </style>

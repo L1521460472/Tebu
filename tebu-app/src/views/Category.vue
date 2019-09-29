@@ -5,7 +5,7 @@
                 <span @click="back" class="iconfont icon-zuojiankuohao1" style="color:pink;font-size:0.43rem;"></span>
             </div>
             <div class="box">
-                <span class="iconfont icon-sousuo" style="color:lightslategray;font-size:0.45rem;"></span>
+                <span class="iconfont icon-sousuo" style="color:lightslategray;font-size:0.38rem;"></span>
             </div>
             <div class="headerinput"><input type="text" value placeholder="搜索热门商品"></div>            
         </header>
@@ -97,13 +97,14 @@ export default {
     background: #ececec;
     border-radius: 0.08rem;
     margin: 0.15rem 0.2rem 0 0;
-    font-size: 0.3rem;
+    font-size: 0.28rem;
     color: grey ;
     padding-left: 2.5rem;
+    box-sizing: border-box;
 }
 .box>.iconfont{
     position: absolute;
-    top: 0.17rem;
+    top: 0.26rem;
     left: 0.2rem;
     z-index: 9;
 }

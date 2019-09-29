@@ -1,11 +1,7 @@
 <template>
       <div class="swiper-container">
     <div class="swiper-wrapper">
-      <!-- <div class="swiper-slide" data-swiper-autoplay="5000"><img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/20/rongyanxie_640-648-.jpg" alt=""></div>
-      <div class="swiper-slide" data-swiper-autoplay="5000"><img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/640-648.jpg" alt=""></div>
-      <div class="swiper-slide" data-swiper-autoplay="5000"><img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/tebuyun.jpg" alt=""></div> -->
-     
-      <div class="swiper-slide" data-swiper-autoplay="3000" :key="page.id" v-for="page of pages"><img :src="page.pic" alt=""></div>
+      <div @click="gotodetai" class="swiper-slide" data-swiper-autoplay="3000" :key="page.id" v-for="page of pages"><img :src="page.pic" alt=""></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -20,10 +16,10 @@ export default {
     data(){
       return{
         pages:[
-          {id:'10000',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/24/huodong_640-648.jpg'},
-          {id:'10001',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/20/rongyanxie_640-648-.jpg'},
-          {id:'10002',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/640-648.jpg'},
-          {id:'10003',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/tebuyun.jpg'},
+          {id:'10000',path:'/detail',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/24/huodong_640-648.jpg'},
+          {id:'10001',path:'/detail',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/20/rongyanxie_640-648-.jpg'},
+          {id:'10002',path:'/detail',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/640-648.jpg'},
+          {id:'10003',path:'/detail',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/tebuyun.jpg'},
         ]
       }
     },
@@ -41,7 +37,11 @@ export default {
   },
         });
     },
-
+    methods:{
+      gotodetai(){
+        this.$router.push('/detail')
+      }
+    }
 }
 </script>
 

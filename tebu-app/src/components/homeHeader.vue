@@ -35,8 +35,8 @@ export default {
 }
 .header .iconfont{
     position: absolute;
-    top: 0.2rem;
-    left: 2.2rem;
+    top: 0.28rem;
+    left: 2.25rem;
     z-index: 9;
 }
 .headerin{
@@ -55,6 +55,7 @@ export default {
     font-size: 0.3rem;
     padding-left: 0.7rem;
     color: black;
+    box-sizing: border-box;
 }
 
 </style>

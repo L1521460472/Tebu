@@ -5,6 +5,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'hash',
   routes: [
     {
       path: '/',
@@ -15,11 +16,6 @@ export default new Router({
       path:'/category',
       name:'category',
       component: () => import('./views/Category.vue')
-    },
-    {
-      path:'/cart',
-      name:'cart',
-      component: () => import('./views/Cart.vue')
     },
     {
       path:'/user',
@@ -35,6 +31,36 @@ export default new Router({
       path:'/list',
       name:'list',
       component:() =>import('./views/List.vue')
+    },
+    {
+      path:'/detail',
+      name:'detail',
+      component: () => import('./views/detail.vue')
+    },
+    {
+      path: '/cart',
+      name: 'shopcart',
+      component: () => import('./views/shopcart.vue')
+    },
+    {
+      path:'/product',
+      name:'buy',
+      component:() => import('./views/buy.vue')
+    },
+    {
+      path:'/vlogin',
+      name:'vlogin',
+      component: () => import(/* webpackChunkName: "about" */ './views/Vlogin.vue')
+    },
+    {
+      path:'/plogin',
+      name:'plogin',
+      component: () => import(/* webpackChunkName: "about" */ './views/Plogin.vue')
+    },
+    {
+      path:'/register',
+      name:'register',
+      component: () => import(/* webpackChunkName: "about" */ './views/Register.vue')
     },
     {
       path: '/about',

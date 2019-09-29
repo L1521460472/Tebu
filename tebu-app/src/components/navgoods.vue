@@ -99,7 +99,6 @@
 </template>
 
 <script>
-//import navgoodslist from '../components/navgoodslist.vue';
 export default {
     name:'navgoods',
     data(){
@@ -135,7 +134,7 @@ export default {
                         {id:'60036',name:'特步 男子板鞋 2019秋季新款高帮百搭休闲时尚板鞋881319319123',pic:'http://image.xtep.com.cn/util/upload/product/201907301444/2019730144422278239A15FEDEAEAE77CEB15A5692E322D.jpg',price:209,pricel:339},
                     ]
                 },
-                {id:'50003',name:'休闲鞋系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/xiuxianxie.jpg',
+                {id:'50004',name:'休闲鞋系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/xiuxianxie.jpg',
                     goodsList:[
                         {id:'60031',name:'特步 专柜款 男子休闲鞋2019秋季新款休闲鞋网布透气跑步鞋男981319393060',pic:'http://image.xtep.com.cn/util/upload/product/201909041135/20199411351912186C3A92947BEA8A09D6B1E63FE43A49A.jpg',price:339,pricel:379},
                         {id:'60032',name:'【DC蝙蝠侠联名】特步 男子休闲鞋 老爹鞋2019秋季新款蝙蝠侠联名袜套跑鞋881419329603',pic:'http://image.xtep.com.cn/util/upload/product/201909031639/201993163916105D6C26B1ADFDD15399920DE6F9C65D1AF.jpg',price:539,pricel:569},
@@ -145,7 +144,7 @@ export default {
                         {id:'60036',name:'特步 专柜款 女子休闲鞋 2019秋季新款网面透气休闲鞋跑步鞋运动鞋女981318320001',pic:'http://image.xtep.com.cn/util/upload/product/201909101658/2019910165810777F1F27EAC2492B389443085856778DAA2.jpg',price:279,pricel:299},
                     ]
                 },
-                {id:'50004',name:'休闲系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/16/xiuxian.jpg',
+                {id:'50005',name:'休闲系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/16/xiuxian.jpg',
                     goodsList:[
                         {id:'60031',name:'特步 专柜款 男子秋季综训运动针织连帽拉链上衣981329940002',pic:'http://image.xtep.com.cn/util/upload/product/201909031630/2019931630274343E247154F176BA32311A7135B6BBAEE7.jpg',price:339,pricel:369},
                         {id:'60032',name:'【明日之子同款】特步 专柜款 男子活力时尚卫衣 撞色拼接潮流圆领卫衣981329920065',pic:'http://image.xtep.com.cn/util/upload/product/201908071414/2019871414518554F43593C8A7EE10A74B9B4F1C91D5B67.jpg',price:199,pricel:219},
@@ -155,7 +154,7 @@ export default {
                         {id:'60036',name:'特步 女子卫衣 19新款半高领保暖简约字母套头衫881428059166',pic:'http://image.xtep.com.cn/util/upload/product/201908161406/2019816146312772CEC4321EDF262344ED6B9AF1B662512.jpg',price:149,pricel:219},
                     ]
                 },
-                {id:'50005',name:'裤装系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/kuzhuang.jpg',
+                {id:'50006',name:'裤装系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/kuzhuang.jpg',
                     goodsList:[
                         {id:'60031',name:'【明日之子同款】特步 专柜款 男子针织九分裤 都市时尚百搭针织裤981329840103',pic:'http://image.xtep.com.cn/util/upload/product/201906261647/2019626164723741D5C4BD162C72FCF8E66D071F8383A2E.jpg',price:219,pricel:239},
                         {id:'60032',name:'【明日之子同款】特步 专柜款 男子拼接撞色九分裤 都市潮流时尚百搭针织九分裤981329840094',pic:'http://image.xtep.com.cn/util/upload/product/201908221727/20198221727215744EA8B84E046D7CE9973652EF4FD9303E.jpg',price:219,pricel:239},
@@ -165,7 +164,7 @@ export default {
                         {id:'60036',name:'特步 男子秋季运动长裤 拼接撞色潮流时尚针织长裤881329639273',pic:'http://image.xtep.com.cn/util/upload/product/201907041610/201974161056590983D393EC0E4FF60C01A3C68F5391841.jpg',price:139,pricel:219},
                     ]
                 },
-                {id:'50006',name:'儿童系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/ertong.jpg',
+                {id:'50007',name:'儿童系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/ertong.jpg',
                     goodsList:[
                         {id:'60031',name:'特步 男童针织套装 19夏新款儿童中小童短T短裤两件套681225349146',pic:'http://image.xtep.com.cn/util/upload/product/201904231516/2019423151624128F7F3D741BD6CC7EAD406287625C9DB00.jpg',price:109,pricel:179},
                         {id:'60032',name:'特步 男童短袖针织衫 19夏新款儿童中小童圆领休闲T恤681225019141',pic:'http://image.xtep.com.cn/util/upload/product/201904231459/20194231459463784C8C60AF7C67E2D77333F31C2EE44ABC.jpg',price:69,pricel:99},
@@ -175,7 +174,7 @@ export default {
                         {id:'60036',name:'特步 专柜款 男童都市新品减震耐磨时尚百搭儿童休闲鞋681115323117',pic:'http://image.xtep.com.cn/util/upload/product/201901281718/201912817181485573C3F10FFF8787866CD97A1C5CF0010B.jpg',price:219,pricel:269},
                     ]
                 },
-                {id:'50007',name:'配件系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/peijian.jpg',
+                {id:'50008',name:'配件系列',pic:'http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/03/27/peijian.jpg',
                     goodsList:[
                         {id:'60031',name:'特步 专柜款 运动跑步男女通用腰包武汉马拉松腰包981337140441',pic:'http://image.xtep.com.cn/util/upload/product/201904021409/20194214919386E38FF6DFE7EB971BDED62BD811A4BF37.jpg',price:99,pricel:99},
                         {id:'60032',name:'【Smiley】特步 女子双肩包 19夏新款轻便时尚运动潮流包881238119030',pic:'http://image.xtep.com.cn/util/upload/product/201904121337/2019412133751628BF5A438D473F40354BB0C4B6E2F310D9.jpg',price:99,pricel:179},
