@@ -1,23 +1,26 @@
 <template>
     <div id="app">
         <div class="header">
+            <span class="iconfont icon-sousuo" style="font-size:0.43rem;color:lightgrey"></span>
             <div class="headerin">
                 <img src="../assets/QQ截图20190923202933.png" />
-                <div>
-                    <span class="icon-sousuo"></span>
-                    <input type="text">
-                </div>
+                <input @click="gotoSousuo" type="text">
             </div>
         </div>
-        <img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/20/rongyanxie_640-648-.jpg" alt="">
-        <img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/640-648.jpg" alt="">
-        <img src="http://xtep.oss-cn-hangzhou.aliyuncs.com/2019/09/02/tebuyun.jpg" alt="">
+        
     </div>
 </template>
 
 <script>
 export default {
-    name:'homeHeader'
+    name:'homeHeader',
+    methods:{
+        gotoSousuo(){
+            setTimeout(() => {
+                this.$router.push({path:'/search'})
+            }, 100);
+        }
+    }
 }
 </script>
 
@@ -27,6 +30,14 @@ export default {
     height: 1rem;
     position: fixed;
     background: #e60012;
+    top: 0;
+    z-index: 9;
+}
+.header .iconfont{
+    position: absolute;
+    top: 0.2rem;
+    left: 2.2rem;
+    z-index: 9;
 }
 .headerin{
     padding: 0.2rem 0.3rem;
@@ -42,12 +53,8 @@ export default {
     float: right;
     border-radius: 0.15rem;
     font-size: 0.3rem;
-}
-#app>img{
-    display: block;
-    width: 100%;
-    height: 7.6rem;
-    display: none;
+    padding-left: 0.7rem;
+    color: black;
 }
 
 </style>
